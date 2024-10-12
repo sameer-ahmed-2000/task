@@ -1,0 +1,5 @@
+
+
+DELETE http://localhost:8000/api/v1/title/f3ed2482-8952-47fb-b1df-60285fd0ef6e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiMGQ5NGVmZmUtMDZiMi00MGQ5LWI2NDItOTlhZDdkYTA4MzVkIiwiaWF0IjoxNzI4NzIwNTQ4LCJleHAiOjE3Mjg3MjQxNDh9.ySc8jz4VX1LHM1Rfwp3KUS_7qGcqFqgurkN36WEdhT0
+Content-Type: application/json
