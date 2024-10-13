@@ -5,7 +5,7 @@ interface InputBoxProps {
     onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-export function InputBox({ placeholder, onChange }: InputBoxProps) {
+export function InputBox({ placeholder, onChange }: Readonly<InputBoxProps>) {
     return (
         <div className="py-1">
             <input

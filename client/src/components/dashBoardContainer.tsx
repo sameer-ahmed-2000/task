@@ -13,7 +13,6 @@ export const DashboardContainer = () => {
     const titleError = useSelector((state: RootState) => state.titles.error);
     const [showNewTitle, setShowNewTitle] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [rowsPerPage, setRowsPerPage] = useState(10); // Default to 10 rows
 
     const handleNewTitleSubmit = (newTitle: any) => {
         console.log("New title submitted:", newTitle);
