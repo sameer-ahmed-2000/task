@@ -9,4 +9,21 @@ To get started, you need to clone the repository to your local machine. Follow t
 2. **Clone the repository** using Git:
 
    ```bash
-   git clone [https://github.com/your-username/your-project.git](https://github.com/sameer-ahmed-2000/task.git)
+   git clone https://github.com/sameer-ahmed-2000/task.git
+
+
+## Running the Backend
+
+1. **Navigate to the backend directory**:
+
+   ```bash
+   cd backend
+
+2. **Install the backend dependencies
+
+   ```bash
+   npm install
+
+   or
+
+   yarn install
