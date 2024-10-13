@@ -176,7 +176,7 @@ To get started, you need to clone the repository to your local machine. Follow t
   - **Body**:
     ```json
     {
-      "token": "string",  // The JWT token for subsequent requests
+      "token": "string",
     }
     ```
   - **Error Response**:
