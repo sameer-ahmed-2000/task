@@ -157,3 +157,42 @@ To get started, you need to clone the repository to your local machine. Follow t
       }
       ```
 
+
+### 5. User Login
+- **Endpoint**: `POST /api/login`
+- **Description**: Authenticates a user and returns a token.
+- **Request**:
+  - **Headers**:
+    - `Content-Type`: `application/json`
+  - **Body**:
+    ```json
+    {
+      "email": "string",
+      "password": "string"
+    }
+    ```
+- **Response**:
+  - **Status Code**: `200 OK`
+  - **Body**:
+    ```json
+    {
+      "token": "string",  // The JWT token for subsequent requests
+    }
+    ```
+  - **Error Response**:
+    - **Status Code**: `401 Unauthorized`
+    - **Body**:
+      ```json
+      {
+        "error": "Invalid credentials"
+      }
+      ```
+    - **Status Code**: `500 Internal Server Error`
+    - **Body**:
+      ```json
+      {
+        "error": "Error message"
+      }
+      ```
+
+
