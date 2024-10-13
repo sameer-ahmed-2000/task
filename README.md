@@ -231,3 +231,5 @@ To get started, you need to clone the repository to your local machine. Follow t
       ```
 
 
+## Video Demonstration
+You can watch the video demonstration of the project [here](demo.mp4).
