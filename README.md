@@ -19,11 +19,15 @@ To get started, you need to clone the repository to your local machine. Follow t
    ```bash
    cd backend
 
-2. **Install the backend dependencies
+2. **Install the backend dependencies**:
 
    ```bash
    npm install
 
-   or
-
+   ```bash
    yarn install
+
+3. **Run the backend**:
+
+   ```bash
+   npm run dev
