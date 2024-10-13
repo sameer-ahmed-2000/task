@@ -59,7 +59,7 @@ To get started, you need to clone the repository to your local machine. Follow t
 ## API Endpoints
 
 ### 1. Fetch Titles
-- **Endpoint**: `GET /api/titles`
+- **Endpoint**: `GET /api/v1/title/`
 - **Description**: Retrieves a list of titles from the database.
 - **Request**:
   - **Headers**: 
@@ -89,7 +89,7 @@ To get started, you need to clone the repository to your local machine. Follow t
       ```
 
 ### 2. Delete Title
-- **Endpoint**: `DELETE /api/titles/:uuid`
+- **Endpoint**: `DELETE /api/v1/title/:uuid`
 - **Description**: Deletes a title specified by the UUID.
 - **Request**:
   - **Parameters**: 
@@ -116,7 +116,7 @@ To get started, you need to clone the repository to your local machine. Follow t
       ```
 
 ### 3. Create New Title
-- **Endpoint**: `POST /api/titles`
+- **Endpoint**: `POST /api/v1/title/`
 - **Description**: Creates a new title.
 - **Request**:
   - **Headers**:
@@ -156,14 +156,49 @@ To get started, you need to clone the repository to your local machine. Follow t
         "error": "Error message"
       }
       ```
+### 4. User Registration
+- **Endpoint**: `POST /api/v1/auth/register`
+- **Description**: Creates a user
+- **Request**:
+  - **Body**:
+    ```json
+    {
+      "username":"string"
+      "email": "string",
+      "password": "string"
+    }
+    ```
+- **Response**:
+  - **Status Code**: `201 OK`
+  - **Body**:
+    ```json
+    {
+      "username":"string"
+      "email": "string",
+      "password": "string"
+    }
+    ```
+  - **Error Response**:
+    - **Status Code**: `400 Bad request`
+    - **Body**:
+      ```json
+      {
+        "error": "Invalid inputs"
+      }
+      ```
+    - **Status Code**: `500 Internal Server Error`
+    - **Body**:
+      ```json
+      {
+        "error": "Error message"
+      }
+      ```
 
 
 ### 5. User Login
-- **Endpoint**: `POST /api/login`
+- **Endpoint**: `POST /api/v1/auth/login`
 - **Description**: Authenticates a user and returns a token.
 - **Request**:
-  - **Headers**:
-    - `Content-Type`: `application/json`
   - **Body**:
     ```json
     {
